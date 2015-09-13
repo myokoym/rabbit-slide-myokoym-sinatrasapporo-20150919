@@ -44,7 +44,7 @@ RubyとJavaScriptの\nパッケージ管理の対比
 
   * npm
   * Bower
-  * Grunt/Gulp
+  * Grunt/gulp
 
 = 概要と対比
 
@@ -104,7 +104,7 @@ RubyとJavaScriptの\nパッケージ管理の対比
   * 違いもある
     * 詳しくは「npm Bower 違い」で検索
 
-= Grunt/Gulp
+= Grunt/gulp
 
   * タスク管理ツール
   * ビルドやテストなど
@@ -125,7 +125,7 @@ RubyとJavaScriptの\nパッケージ管理の対比
   npm -g, RubyGems
   npm, RubyGems+Bundler
   Bower, RubyGems+Bundler
-  Grunt/Gulp, Rake
+  Grunt/gulp, Rake
 
 = テーマ2
 
