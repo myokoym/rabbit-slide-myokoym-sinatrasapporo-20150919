@@ -17,17 +17,121 @@
 
 = 自己紹介
 
+  * @myokoym
+  * （以下略）
+
 = きっかけ
 
-= テーマ
+  * JavaScriptのライブラリ（パッケージ）はBowerで管理するといいらしい
+  * Sinatraと一緒に使うにはどうすれば？
+  * そもそもBowerって何者？
 
-= 目次
+= テーマ1
 
-= とは
+(('tag:center'))
+(('tag:large'))
+RubyとJavaScriptの\nパッケージ管理の対比
 
-= 比較
+= 登場人物
 
-= 組み合わせ方
+= Ruby
+
+  * RubyGems
+  * Bundler
+  * Rake
+
+= JavaScript
+
+  * npm
+  * Bower
+  * Grunt/Gulp
+
+= 概要と対比
+
+= npm
+
+  * JavaScript（Node.js）のパッケージマネージャ
+  * 主にサーバサイド向け
+
+= npm
+
+  * パッケージ作成や登録（レジストリ）
+    * RubyGems
+  * プロジェクトで使うバージョンの指定や依存関係の管理
+    * Bundler
+
+= npm
+
+  * パッケージ情報や依存関係はpackage.jsonに記述
+    * RubyGemsでいう.gemspec
+    * BundlerでいうGemfile
+
+= npm
+
+  * デフォルトでローカルディレクトリにインストール
+    * node_modulesディレクトリ
+  * -gオプションでシステムのグローバルに
+    * gem installのデフォルトはこちら
+
+= Bower
+
+  * Webサイトのパッケージマネージャ
+  * フロントエンド向け
+
+= Bower
+
+  * パッケージ作成や登録（レジストリ）
+    * RubyGems
+  * プロジェクトで使うバージョンの指定や依存関係の管理
+    * Bundler
+
+= Bower
+
+  * パッケージ情報や依存関係はbower.jsonに記述
+    * RubyGemsでいう.gemspec
+    * BundlerでいうGemfile
+
+= npm
+
+  * デフォルトでローカルディレクトリにインストール
+    * bower_componentsディレクトリ
+  * システムのグローバルにインストールすることはない
+
+= npmとBower
+
+  * 似ている
+    * Bowerはnpmを元に作られた
+  * 違いもある
+    * 詳しくは「npm Bower 違い」で検索
+
+= Grunt/Gulp
+
+  * タスク管理ツール
+  * ビルドやテストなど
+  * フロントエンドでは特に重要
+
+= なぜ重要か
+
+  * 配信する必要があるため
+    * 必要なファイルだけ取り出したり
+    * 圧縮したり
+
+= まとめ
+
+  # RT
+
+  JavaScript, Ruby
+
+  npm -g, RubyGems
+  npm, RubyGems+Bundler
+  Bower, RubyGems+Bundler
+  Grunt/Gulp, Rake
+
+= テーマ2
+
+(('tag:center'))
+(('tag:large'))
+npmやBowerと\nBundlerを\n一緒に使う
 
 = まとめ
 
