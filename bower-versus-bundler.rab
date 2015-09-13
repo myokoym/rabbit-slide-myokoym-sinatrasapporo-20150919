@@ -91,7 +91,7 @@ RubyとJavaScriptの\nパッケージ管理の対比
     * RubyGemsでいう.gemspec
     * BundlerでいうGemfile
 
-= npm
+= Bower
 
   * デフォルトでローカルディレクトリにインストール
     * bower_componentsディレクトリ
