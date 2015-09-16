@@ -1,4 +1,4 @@
-= Bower\nvs.\nBundler
+= Sinatra w/ Bower
 
 # : subtitle
 #    サブタイトル
@@ -131,7 +131,12 @@ RubyとJavaScriptの\nパッケージ管理の対比
 
 (('tag:center'))
 (('tag:large'))
-npmやBowerと\nBundlerを\n一緒に使う
+SinatraとBowerを\n一緒に使う
+
+= やり方
+
+* 生bower.json
+* Rails Assets
 
 = まとめ
 
