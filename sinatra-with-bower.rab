@@ -207,7 +207,32 @@ JavaScript((*パッケージ管理*))
     * 結合
     * 圧縮（minify）
 
-= まとめ
+= Sinatra×\nアセットパイプライン
+
+  * sinatra-assetpack
+    * (('note:https://github.com/rstacruz/sinatra-assetpack'))
+  * sinatra-asset-pipeline
+    * (('note:https://github.com/kalasjocke/sinatra-asset-pipeline'))
+
+= Sinatra×\nRails Assets
+
+  * rails-assets-sinatra
+    * (('note:https://github.com/rails-assets/rails-assets-sinatra'))
+    * sinatra-asset-pipelineを使用
+
+= rails-assets-sinatra
+
+  # blockquote
+  how to easily integrate Sinatra with Bower. Node.js is not required.
+
+= ｷﾀ━(ﾟ∀ﾟ)━!
+
+= デモ
+
+== property
+
+: as_large_as_possible
+   true
 
 = 参考
 
