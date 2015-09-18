@@ -1,6 +1,7 @@
-= TODO: スライドのタイトル
+= Sinatra w/ Bower
 
-TODO: スライドの説明
+Sinatraアプリのフロントエンド用パッケージ（JavaScriptやCSSなど）の
+管理を楽にするためにBowerやアセットパイプラインを使う話。
 
 == 作者向け
 
