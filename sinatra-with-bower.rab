@@ -33,6 +33,7 @@ JavaScript((*パッケージ管理*))
 
   * RubyGemsっぽくJavaScriptのライブラリを管理したい
     * 手動ダウンロードつらい
+    * dependency hell
 
 = きっかけ
 
@@ -159,16 +160,52 @@ JavaScript((*パッケージ管理*))
   Bower, RubyGems+Bundler
   Grunt/gulp, Rake
 
-= テーマ2
+= ハーフタイム
 
-(('tag:center'))
-(('tag:large'))
-SinatraとBowerを\n一緒に使う
+  * 進捗どうですか？
+
+= アジェンダ
+
+  * (('del:Bowerとは'))
+  * ((*Sinatraと一緒に使うには*))
 
 = やり方
 
-* 生bower.json
-* Rails Assets
+  * 生のbower.jsonを使う
+  * Rails Assetsを使う
+    * アセットパイプライン
+
+= 生のbower.jsonを使う
+
+  * 1. bower_componentsにインストール
+  * 2. publicにコピー
+    * Rakeタスクに組み込むなど
+
+= 生のbower.jsonを使う
+
+  * メリット
+    * Bowerの機能をそのまま使える
+  * デメリット
+    * パッケージ管理のしくみが複数できてしまうので複雑になる
+
+= Rails Assetsを使う
+
+  * Rails向けのアセット管理のしくみ
+    * (('note:https://rails-assets.org/'))
+    * アセットパイプライン対応
+
+= アセット
+
+  * ブラウザに配信するファイル
+  * JavaScript、CSS、画像など
+  * publicに配置するもの
+
+= アセットパイプライン
+
+  * アセットを配信用に変換するしくみ
+    * コンパイル（Sass、Coffee Scriptなど）
+    * 結合
+    * 圧縮（minify）
 
 = まとめ
 
