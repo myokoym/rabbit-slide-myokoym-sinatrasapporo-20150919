@@ -174,6 +174,7 @@ JavaScript((*パッケージ管理*))
   * 生のbower.jsonを使う
   * Rails Assetsを使う
     * アセットパイプライン
+  * 別のアプリケーションにする
 
 = 生のbower.jsonを使う
 
@@ -210,16 +211,16 @@ JavaScript((*パッケージ管理*))
 
 = Sinatra×\nアセットパイプライン
 
-  * sinatra-assetpack
+  * Sinatra AssetPack
     * (('note:https://github.com/rstacruz/sinatra-assetpack'))
-  * sinatra-asset-pipeline
+  * Sinatra Asset Pipeline
     * (('note:https://github.com/kalasjocke/sinatra-asset-pipeline'))
 
 = Sinatra×\nRails Assets
 
   * rails-assets-sinatra
     * (('note:https://github.com/rails-assets/rails-assets-sinatra'))
-    * sinatra-asset-pipelineを使用
+    * Sinatra Asset Pipelineを使用
 
 = rails-assets-sinatra
 
@@ -235,9 +236,14 @@ JavaScript((*パッケージ管理*))
 : as_large_as_possible
    true
 
-= 参考
+= 別のアプリケーションにする
 
-  * sinatra-asset-pipeline
-    * (('note:https://github.com/kalasjocke/sinatra-asset-pipeline'))
-  * rails-assets-sinatra
-    * (('note:https://github.com/rails-assets/rails-assets-sinatra'))
+  * SinatraはWeb APIとして使う
+  * フロントエンドはJavaScriptのMVCフレームワークなどを使う
+    * Bowerでパッケージ管理
+
+= まとめ
+
+  * Bowerを使うとフロントエンドのパッケージ管理が楽になる
+  * Sinatraと使うならrails-assets-sinatraのやり方がおすすめ
+  * 別アプリも有力な選択肢
