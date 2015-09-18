@@ -3,7 +3,7 @@
 # : subtitle
 #    サブタイトル
 : author
-   @myokoym
+   Masafumi Yokoyama
 # : institution
 #    所属
 : content-source
@@ -18,35 +18,68 @@
 = 自己紹介
 
   * @myokoym
-  * （以下略）
+  * 江別→札幌→東京
+  * 将棋
+
+= よろしくお願いします。\n\nm(_ _)m
+
+= 話すこと
+
+(('tag:center'))
+((*Sinatra*))を使ったWebアプリの\n
+JavaScript((*パッケージ管理*))
 
 = きっかけ
 
-  * JavaScriptのライブラリ（パッケージ）はBowerで管理するといいらしい
-  * Sinatraと一緒に使うにはどうすれば？
-  * そもそもBowerって何者？
+  * RubyGemsっぽくJavaScriptのライブラリを管理したい
+    * 手動ダウンロードつらい
 
-= テーマ1
+= きっかけ
 
-(('tag:center'))
-(('tag:large'))
-RubyとJavaScriptの\nパッケージ管理の対比
+  * Bowerを使うといいらしい
+  * Sinatraと一緒に使いたい
 
-= 登場人物
+= アジェンダ
 
-= Ruby
+  * Bowerとは
+  * Sinatraと一緒に使うには
+
+= アジェンダ
+
+  * ((*Bowerとは*))
+  * Sinatraと一緒に使うには
+
+= RubyとJavaScriptの\nパッケージ管理の対比
+
+= おさらい
 
   * RubyGems
   * Bundler
   * Rake
+
+= RubyGems
+
+  * Rubyのパッケージ管理のしくみ
+    * APTやHomebrewなどのRuby版
+  * ライブラリなどをコマンド一発でインストールできる
+
+= Bundler
+
+  * プロジェクトで使うgemを管理するしくみ
+  * バージョンを指定できる
+    * 開発環境と本番環境でずれるのを防げる　
+
+= Rake
+
+  * タスク管理ツール
+    * MakeのRuby版
+  * ビルドやパッケージングなどを自動化
 
 = JavaScript
 
   * npm
   * Bower
   * Grunt/gulp
-
-= 概要と対比
 
 = npm
 
@@ -101,14 +134,13 @@ RubyとJavaScriptの\nパッケージ管理の対比
 
   * 似ている
     * Bowerはnpmを元に作られた
-  * 違いもある
-    * 詳しくは「npm Bower 違い」で検索
+  * 基本的にnpmはサーバーサイド（開発用ツールなど）、Bowerはフロントエンド（ブラウザに配信するもの）で使う
 
 = Grunt/gulp
 
   * タスク管理ツール
-  * ビルドやテストなど
-  * フロントエンドでは特に重要
+    * Rake
+  * フロントエンドではけっこう重要
 
 = なぜ重要か
 
@@ -141,3 +173,8 @@ SinatraとBowerを\n一緒に使う
 = まとめ
 
 = 参考
+
+  * sinatra-asset-pipeline
+    * (('note:https://github.com/kalasjocke/sinatra-asset-pipeline'))
+  * rails-assets-sinatra
+    * (('note:https://github.com/rails-assets/rails-assets-sinatra'))
