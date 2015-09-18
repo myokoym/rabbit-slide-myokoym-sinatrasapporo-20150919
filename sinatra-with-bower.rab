@@ -193,6 +193,7 @@ JavaScript((*パッケージ管理*))
   * Rails向けのアセット管理のしくみ
     * (('note:https://rails-assets.org/'))
     * アセットパイプライン対応
+    * 内部でBowerを使っている
 
 = アセット
 
