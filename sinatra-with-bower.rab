@@ -88,7 +88,7 @@ JavaScript((*パッケージ管理*))
 
 = npm
 
-  * パッケージ作成や登録（レジストリ）
+  * パッケージ作成や登録
     * RubyGemsの機能
   * プロジェクトで使うバージョンの指定や依存関係の管理
     * Bundlerの機能
@@ -109,9 +109,6 @@ JavaScript((*パッケージ管理*))
 = Bower
 
   * Twitter社製のフロントエンド用パッケージマネージャ
-
-= Bower
-
   * パッケージ情報や依存関係はbower.jsonに記述
   * 機能はほぼnpmと同じ
 
@@ -125,13 +122,15 @@ JavaScript((*パッケージ管理*))
 
   * 似ている
     * Bowerはnpmを元に作られた
-  * 棲み分けとして、npmはサーバーサイド（開発用ツールなど）、Bowerはフロントエンド（ブラウザに配信するもの）で使う
+  * 棲み分け
+    * npmはサーバーサイド（開発用ツールなど）
+    * Bowerはフロントエンド（ブラウザに配信するもの）
 
 = Grunt/gulp
 
   * タスク管理ツール
     * Rake
-  * フロントエンドではけっこう重要
+  * フロントエンドでは結構重要
 
 = なぜ重要か
 
@@ -139,7 +138,7 @@ JavaScript((*パッケージ管理*))
     * 必要なファイルだけ取り出したり
     * 圧縮したり
 
-= まとめ
+= 対比表
 
   # RT
 
@@ -164,7 +163,7 @@ JavaScript((*パッケージ管理*))
   * 生のbower.jsonを使う
   * Rails Assetsを使う
     * アセットパイプライン
-  * 別のアプリケーションにする
+  * 別のアプリケーション
 
 = 生のbower.jsonを使う
 
@@ -181,7 +180,7 @@ JavaScript((*パッケージ管理*))
 
 = Rails Assetsを使う
 
-  * Rails向けのアセット管理のしくみ
+  * Rails向けのアセット管理手法
     * (('note:https://rails-assets.org/'))
     * アセットパイプライン対応
     * 内部でBowerを使っている
@@ -194,10 +193,12 @@ JavaScript((*パッケージ管理*))
 
 = アセットパイプライン
 
-  * アセットを配信用に変換するしくみ
-    * コンパイル（Sass、Coffee Scriptなど）
+  * アセットを配信用に変換
+    * コンパイル（.sass、.coffeeなど）
     * 結合
+      * (('note:通信回数を減らす'))
     * 圧縮（minify）
+      * (('note:通信量を減らす'))
 
 = Sinatra×\nアセットパイプライン
 
@@ -217,7 +218,12 @@ JavaScript((*パッケージ管理*))
   # blockquote
   how to easily integrate Sinatra with Bower. Node.js is not required.
 
-= ｷﾀ━(ﾟ∀ﾟ)━!
+= rails-assets-sinatra
+
+  # blockquote
+  how to easily integrate ((*Sinatra with Bower*)). Node.js is not required.
+
+= ｷﾀ━(ﾟ∀ﾟ)━!!
 
 = デモ
 
@@ -226,10 +232,10 @@ JavaScript((*パッケージ管理*))
 : as_large_as_possible
    true
 
-= 別のアプリケーションにする
+= 別のアプリケーション
 
   * SinatraはWeb APIとして使う
-  * フロントエンドはJavaScriptのMVCフレームワークなどを使う
+  * フロントエンドはMVCフレームワークなどを使う
     * Bowerでパッケージ管理
 
 = まとめ
