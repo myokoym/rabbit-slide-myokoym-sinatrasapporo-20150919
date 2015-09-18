@@ -85,14 +85,13 @@ JavaScript((*パッケージ管理*))
 = npm
 
   * JavaScript（Node.js）のパッケージマネージャ
-  * 主にサーバサイド向け
 
 = npm
 
   * パッケージ作成や登録（レジストリ）
-    * RubyGems
+    * RubyGemsの機能
   * プロジェクトで使うバージョンの指定や依存関係の管理
-    * Bundler
+    * Bundlerの機能
 
 = npm
 
@@ -109,21 +108,12 @@ JavaScript((*パッケージ管理*))
 
 = Bower
 
-  * Webサイトのパッケージマネージャ
-  * フロントエンド向け
-
-= Bower
-
-  * パッケージ作成や登録（レジストリ）
-    * RubyGems
-  * プロジェクトで使うバージョンの指定や依存関係の管理
-    * Bundler
+  * Twitter社製のフロントエンド用パッケージマネージャ
 
 = Bower
 
   * パッケージ情報や依存関係はbower.jsonに記述
-    * RubyGemsでいう.gemspec
-    * BundlerでいうGemfile
+  * 機能はほぼnpmと同じ
 
 = Bower
 
@@ -135,7 +125,7 @@ JavaScript((*パッケージ管理*))
 
   * 似ている
     * Bowerはnpmを元に作られた
-  * 基本的にnpmはサーバーサイド（開発用ツールなど）、Bowerはフロントエンド（ブラウザに配信するもの）で使う
+  * 棲み分けとして、npmはサーバーサイド（開発用ツールなど）、Bowerはフロントエンド（ブラウザに配信するもの）で使う
 
 = Grunt/gulp
 
